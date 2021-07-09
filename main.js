@@ -40,3 +40,17 @@ function handleClick() {
   let text = document.querySelector("#text");
   copyToClipBoard(text.innerText);
 }
+
+//      3
+//3
+// 3. destructuring aliases
+
+const language = {
+  name: "JavaScript",
+  founded: 1995,
+  founder: "Brendan Eich",
+};
+
+const { name: languageName, founder: createrName } = language;
+
+console.log(languageName, createrName);
